@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Client Project Suite" parallel="false">
+    <test name = "ClientAPI Tests">
+        <groups>
+            <define name = "all">
+                <include name = "positive"/>
+                <include name = "negative"/>
+            </define>
+            <run>
+                <include name = "all"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.epam.client.ClientAPITest" />
+        </classes>
+    </test>
+</suite>
